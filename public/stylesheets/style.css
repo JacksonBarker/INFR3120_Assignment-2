@@ -1,8 +1,74 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.header {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
-a {
-  color: #00B7FF;
+.footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+
+.header a,
+.footer a,
+.footer p {
+  all: unset;
+  margin: 1em;
+}
+
+.header a:hover,
+.footer a:hover {
+  text-decoration-line: underline;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background: slateblue;
+  background: -moz-linear-gradient(
+    top,
+    slateblue 0%,
+    white 50%,
+    slateblue 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    slateblue 0%,
+    white 50%,
+    slateblue 100%
+  );
+  background: -o-linear-gradient(top, slateblue 0%, white 50%, slateblue 100%);
+  background: linear-gradient(
+    to bottom,
+    slateblue 0%,
+    white 50%,
+    slateblue 100%
+  );
+}
+
+article,
+h2,
+form {
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
 }
