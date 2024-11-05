@@ -1,28 +1,37 @@
 <%- include partials/header.ejs %>
-      <article>
-        <header>
-          <h1>About Me</h1>
-        </header>
-        <section>
-          <aside>
-            <img src="/images/photo.jpg" alt="Portrait of Jackson Barker" />
-          </aside>
-          <p>
-            My name is Jackson Barker. I am 2nd year Networking and Information
-            Technology student at Ontario Tech University. I am an Associate
-            Information Officer for the Networking and IT Security Students'
-            Association.
-          </p>
-        </section>
-        <section>
-          <p class="clear">
-            <br />
-            Here is a short introduction to me and my website.
-          </p>
-          <video controls poster="/images/poster.jpg" preload>
-            <source src="/images/video.mp4" type="video/mp4" />
-            Your browser doesn't support the video tag.
-          </video>
-        </section>
-      </article>
+<div class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">About Me</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+    <div class="d-flex">
+      <div>
+        <h3>Who am I?</h3>
+        <p>
+          My name is Jackson Barker. I am 2nd year Networking and Information
+          Technology student at Ontario Tech University. I am an Associate
+          Information Officer for the Networking and IT Security Students'
+          Association.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <img
+        height="250"
+        src="/images/photo.jpg"
+        alt="Portrait of Jackson Barker"
+      />
+    </div>
+    <div class="d-flex">
+      <div>
+        <h3>Introduction Video</h3>
+        <p>Here is a short introduction to me and my website.</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <video height="250" controls poster="/images/poster.jpg" preload>
+        <source src="/images/video.mp4" type="video/mp4" />
+        Your browser doesn't support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
 <%- include partials/footer.ejs %>

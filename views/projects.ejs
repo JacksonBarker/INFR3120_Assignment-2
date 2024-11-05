@@ -1,49 +1,55 @@
 <%- include partials/header.ejs %>
-      <article>
-        <header>
-          <h1>My Projects</h1>
-        </header>
-        <section>
-          <aside>
-            <a href="/"><img class="logo" src="/images/emoji_u1f310.svg" /></a>
-          </aside>
-          <h3><a href="/">INFR3120 Portfolio</a></h3>
-          <p>
-            This site is my portfolio for Assignment-1 in Web & Script
-            Programming. Using HTML5 and CSS3
-          </p>
-        </section>
-        <br />
-        <section class="clear">
-          <aside>
-            <a href="https://github.com/JacksonBarker/Wordle/"
-              ><img class="logo" src="/images/github-mark.svg"
-            /></a>
-          </aside>
-          <h3>
-            <a href="https://github.com/JacksonBarker/Wordle/">Wordle Clone</a>
-          </h3>
-          <p>
-            Written in Java for my 11th grade computer science culminating
-            assignment.
-          </p>
-        </section>
-        <br />
-        <section class="clear">
-          <aside>
-            <a href="https://github.com/JacksonBarker/GoodMorningCrusaders/"
-              ><img class="logo" src="/images/github-mark.svg"
-            /></a>
-          </aside>
-          <h3>
-            <a href="https://github.com/JacksonBarker/GoodMorningCrusaders/"
-              >Good Morning Crusaders</a
-            >
-          </h3>
-          <p>
-            A simple Python application that uses ffmpeg to concatinate videos
-            to be played for my high school's morning announcements.
-          </p>
-        </section>
-      </article>
+<div class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">My Projects</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="d-flex">
+      <img
+        class="bi me-3"
+        width="36"
+        height="36"
+        src="/images/emoji_u1f310.svg"
+      />
+      <div>
+        <h3>INFR3120 Portfolio</h3>
+        <p>
+          This site is my portfolio for Assignment-2 in Web & Script
+          Programming. Using EJS and Bootstrap
+        </p>
+        <a href="#" class="btn btn-primary"> Visit Site </a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <img
+        class="bi me-3"
+        width="36"
+        height="36"
+        src="/images/github-mark.svg"
+      />
+      <div>
+        <h3>Wordle Clone</h3>
+        <p>
+          Written in Java for my 11th grade computer science culminating
+          assignment.
+        </p>
+        <a href="#" class="btn btn-primary"> Github Repo </a>
+      </div>
+    </div>
+    <div class="d-flex">
+      <img
+        class="bi me-3"
+        width="36"
+        height="36"
+        src="/images/github-mark.svg"
+      />
+      <div>
+        <h3>Good Morning Crusaders</h3>
+        <p>
+          A simple Python application that uses ffmpeg to concatinate videos to
+          be played for my high school's morning announcements.
+        </p>
+        <a href="#" class="btn btn-primary"> Github Repo </a>
+      </div>
+    </div>
+  </div>
+</div>
 <%- include partials/footer.ejs %>
